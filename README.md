@@ -1,7 +1,7 @@
 # Lines# Lines - Ride Sharing Platform
 
 <div align="center">
-  <img src="https://img.icons8.com/color/96/000000/car-sharing.png" alt="Logo" width="80" height="80">
+  <img src="[https://img.icons8.com/color/96/000000/car-sharing.png](https://tse3.mm.bing.net/th/id/OIP.MN4lrBBmRcSFKokrp7fqbQAAAA?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3)" alt="Logo" width="80" height="80">
   
   [![.NET](https://img.shields.io/badge/.NET-6.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
   [![Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture-6DB33F?logo=architecture)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
