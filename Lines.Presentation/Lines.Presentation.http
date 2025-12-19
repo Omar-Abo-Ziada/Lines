@@ -1,0 +1,25 @@
+@Lines.Presentation_HostAddress = http://localhost:5083
+
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTExMTExMS0xMTExLTExMTEtMTExMS0xMTExMTExMTExMTEiLCJqdGkiOiI3ZjI0ZjRhNS0xNDg1LTQ1MGEtYjhiMC1hMGZjMjZjZjNkYjAiLCJleHAiOjE3NTc5NjMwNjUsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMC8iLCJhdWQiOiJZb3VyQXBwVXNlcnMifQ.SlT3tpUMj-wTPXud0QtsgoJlkGN2D1NjtVJuSYzV1uQ
+GET {{Lines.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{Lines.Presentation_HostAddress}}/api/trip-request/offer
+Authorization: {{token}} 
+Content-Type: application/json
+
+{
+  "price": 100,
+  "distanceToArriveInMeters": 500,
+  "timeToArriveInMinutes": 10,
+  "tripRequestId": "11111111-1111-1111-1111-111111111111"
+}
+
+###
+
+GET {{Lines.Presentation_HostAddress}}/api/payment-method/getall
+Authorization: {{token}}
+
+###

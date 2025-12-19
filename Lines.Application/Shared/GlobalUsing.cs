@@ -1,0 +1,16 @@
+﻿global using Lines.Application.Common;
+global using Lines.Application.Features.Drivers.GetNearbyDriverConnectionsFilteredByKmPrice.Orchestrators;
+global using Lines.Application.Features.TripRequests;
+global using Lines.Application.Features.TripRequests.Commands;
+global using Lines.Application.Features.TripRequests.Orchestrator;
+global using Lines.Application.Features.VehicleTypes.Orchestrators;
+global using Lines.Application.Hubs;
+global using Lines.Application.Interfaces;
+global using Lines.Application.Shared;
+global using Lines.Domain.Enums;
+global using Lines.Domain.Models.Trips;
+global using Lines.Domain.Shared;
+global using Lines.Domain.Value_Objects;
+global using Mapster;
+global using MediatR;
+global using Microsoft.AspNetCore.SignalR;

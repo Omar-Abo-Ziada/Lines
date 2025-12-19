@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>false</InvariantGlobalization>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<CopyLockRetryCount>50</CopyLockRetryCount>
+		<CopyLockRetryDelayMilliseconds>100</CopyLockRetryDelayMilliseconds>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Controllers\**" />
+	  <Compile Remove="Endpoints\PaymentMethods\CreateCutomer\**" />
+	  <Compile Remove="Endpoints\PaymentMethods\GenerateClientToken\**" />
+	  <Compile Remove="Endpoints\PaymentMethods\GetAllPaymentMethods\**" />
+	  <Content Remove="Controllers\**" />
+	  <Content Remove="Endpoints\PaymentMethods\CreateCutomer\**" />
+	  <Content Remove="Endpoints\PaymentMethods\GenerateClientToken\**" />
+	  <Content Remove="Endpoints\PaymentMethods\GetAllPaymentMethods\**" />
+	  <EmbeddedResource Remove="Controllers\**" />
+	  <EmbeddedResource Remove="Endpoints\PaymentMethods\CreateCutomer\**" />
+	  <EmbeddedResource Remove="Endpoints\PaymentMethods\GenerateClientToken\**" />
+	  <EmbeddedResource Remove="Endpoints\PaymentMethods\GetAllPaymentMethods\**" />
+	  <None Remove="Controllers\**" />
+	  <None Remove="Endpoints\PaymentMethods\CreateCutomer\**" />
+	  <None Remove="Endpoints\PaymentMethods\GenerateClientToken\**" />
+	  <None Remove="Endpoints\PaymentMethods\GetAllPaymentMethods\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNet.Security.OAuth.Apple" Version="8.0.0" />
+		<PackageReference Include="AutoMapper" Version="14.0.0" />
+		<PackageReference Include="FluentValidation" Version="12.0.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.16">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+		<PackageReference Include="Serilog.Sinks.MSSqlServer" Version="9.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\DependencyInjection\DependencyInjection.csproj" />
+		<ProjectReference Include="..\Lines.Application\Lines.Application.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Endpoints\Passengers\NewFolder\" />
+		<Folder Include="wwwroot\" />
+	</ItemGroup>
+
+</Project>
