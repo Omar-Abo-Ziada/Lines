@@ -13,7 +13,7 @@ Lines is a comprehensive ride-sharing platform that connects passengers with dri
 
 ## Architecture
 
-The application follows Clean Architecture with clear separation of concerns across multiple layers:
+The application follows Clean Architecture combined with Vertical Slice Architecture, focusing on organizing features by business capability rather than technical layers. Each feature encapsulates its own request handling, validation, and business logic, improving maintainability and scalability.
 
 ```
 Lines/
@@ -26,7 +26,7 @@ Lines/
 
 ### Key Architectural Patterns
 
-- **Clean Architecture** - Separation of concerns with dependency rule
+- **Clean Architecture With Vertical Slicing** - Separation of concerns with dependency rule
 - **CQRS** - Command Query Responsibility Segregation
 - **Repository Pattern** - For data access abstraction
 - **Unit of Work** - For transaction management
